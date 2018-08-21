@@ -21,13 +21,13 @@ services:
   image: venkatnarahari/producer:1.0
   restart: always
   network_mode: host
-  container_name: spring-docker-2
+  container_name: spring-docker-1
   ports:
    - 8081:8081
  consumer:
   image: venkatnarahari/consumer:1.0
   restart: always
   network_mode: host
-  container_name: spring-docker-1
+  container_name: spring-docker-2
   ports:
    - 8080:8080
